@@ -6,12 +6,11 @@ class App extends Component{
 
   render(){
 
-  
-
   return (
-    <div className='App'>
+    <React.Fragment>
       <h1> Hello from React </h1> 
-    </div>
+      <h2>Goodbye</h2>
+    </React.Fragment>
   );
 }
 }
