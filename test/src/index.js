@@ -19,8 +19,16 @@ function App(){
   let message = 'Hi there, you lucky Cow'; 
   const secondMessage = 123; // hetah hian boolean, null , undefined leh object a hman theihloh
 
-  return <h1>{message} {secondMessage}</h1>
+ const date = new Date();
+ const time = date.toLocaleString();
 
+  return <div>
+            <h1>{message} {secondMessage} {time}</h1>
+            <input type="number" 
+              min={5} 
+              max={20}
+              style={{border: '3px solid red'}}/>
+         </div>  
 }
 
 // 5. Component display
